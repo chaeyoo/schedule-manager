@@ -1,6 +1,6 @@
 export interface IWeeklyPlan {
     period: IWeekPlanDate;
-    goal: IWeekGoal;
+    goal: string;
     plans: IWeekPlans;
 }
 
@@ -14,15 +14,11 @@ export interface IWeekGoal {
 }
 
 export interface IWeekPlans {
-    mon: IWeekPlan;
-    tue: IWeekPlan;
-    wed: IWeekPlan;
-    thr: IWeekPlan;
-    fri: IWeekPlan;
-    sat: IWeekPlan;
-    sun: IWeekPlan;
-}
-
-export interface IWeekPlan {
-    plan: string;
+    mon: string;
+    tue: string;
+    wed: string;
+    thr: string;
+    fri: string;
+    sat: string;
+    sun: string;
 }
